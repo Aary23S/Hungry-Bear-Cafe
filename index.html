@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungrey Bear</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeElements = document.querySelectorAll('.fade-in, .slide-in');
+
+      const handleScroll = () => {
+          fadeElements.forEach((el) => {
+              const rect = el.getBoundingClientRect();
+              if (rect.top < window.innerHeight - 100) {
+                  el.classList.add('visible');
+              }
+          });
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Trigger on load
+  });
+
+  document.querySelector('.contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Your message has been sent!');
+        e.target.reset();
+    }); 
+
+    
+
+</script>
+
+<style>
+    /* html {
+      scroll-behavior: smooth;
+    } */
+</style>
+
+
+</head>
+
+<!-- Main Body Code -->
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Hungrey Bear Logo" class="logo-img" style="color: black;">
+      </div>
+     
+      <!-- <div class="logo">Hungrey Bear</div> -->
+      <ul class="nav-links">
+        <li><a href="index7.html">Home</a></li>
+        <!-- <li><a href="about.html">About Us</a></li> -->
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <!-- <li><a href="Events">Events</a></li> -->
+        <li><a href="#Contact">Contact</a></li>
+        <!-- <li><a href="#Blog">Blog</a></li> -->
+      </ul>
+    </nav>
+  
+  
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="fade-in" style="color: aliceblue;">Welcome to <i>Hungry Bear</i></h1>
+      <p id="para1">Your favorite hangout spot on campus!</p>
+      <a href="#Menu" class="btn" >View Menu</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div>
+        <h3>Delicious Menu</h3>
+        <p>Indulge in a variety of dishes and beverages designed to satisfy your every craving. Our menu is a delightful blend of classic favorites and innovative creations, all crafted with the freshest ingredients and a touch of culinary expertise. Whether you're in the mood for a quick snack, a hearty meal, or a refreshing drink,</p>
+      </div>
+      <div>
+        <h3>Great Ambiance</h3>
+        <p>Our cafe offers a perfect ambiance for any occasion, whether you're studying, relaxing, or hanging out with friends. With comfortable seating, warm lighting, and a blend of modern and rustic decor, the atmosphere is welcoming and soothing. We have quiet study areas with power outlets and Wi-Fi, as well as social spaces with board games and books.</p>
+      </div>
+      <div>
+        <h3>Exciting Events</h3>
+        <p>We host exciting events weekly to keep the atmosphere lively and engaging. Enjoy live music performances, where talented artists set the perfect vibe. Our open mic nights are a hit, offering a platform for budding poets, comedians, and musicians to showcase their talents.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="Menu">
+    <h2 class="slide-in">Our Menu</h2>
+  
+    <!-- Indian Snacks -->
+    <h3>Indian Snacks</h3>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="attractive and delicious samosas.png" alt="Samosa">
+        <h3>Samosa</h3>
+        <p>Golden fried, stuffed with spicy potato filling.</p>
+        <p class="price">Rs.20/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious pakoras.png" alt="Pakora">
+        <h3>Pakora</h3>
+        <p>Deep-fried fritters with a variety of fillings.</p>
+        <p class="price">Rs.40/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious idli and dosas.png" alt="Idli">
+        <h3>Idli</h3>
+        <p>Soft and fluffy steamed rice cakes.</p>
+        <p class="price">Rs.40/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious vada pav.png" alt="Vada Pav">
+        <h3>Vada Pav</h3>
+        <p>The classic Indian burger with a spicy potato patty.</p>
+        <p class="price">Rs.20/-</p>
+      </div>
+    </div>
+  
+    <!-- International Snacks -->
+    <h3>International Snacks</h3>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="attractive and delicious french fries.png" alt="French Fries">
+        <h3>French Fries</h3>
+        <p>Crispy and golden fries with a pinch of salt.</p>
+        <p class="price">Rs.30/-</p>
+      </div>
+      <div class="card">
+        <img src="an attractive and delicious picture of the Maharaja sandwich.png" alt="Cheese Balls">
+        <h3>Cheese Balls</h3>
+        <p>Cheesy and crunchy snacks perfect for any time.</p>
+        <p class="price">Rs.120/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious hot spring rolls.png" alt="Spring Rolls">
+        <h3>Spring Rolls</h3>
+        <p>Delicious rolls stuffed with veggies or chicken.</p>
+        <p class="price">Rs.80/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious nachos.png" alt="Nachos">
+        <h3>Nachos</h3>
+        <p>Crispy tortilla chips served with salsa and cheese.</p>
+        <p class="price">Rs.50/-</p>
+      </div>
+    </div>
+  
+    <!-- Beverages -->
+    <h3>Beverages</h3>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="attractive and delicious masala tea.png" alt="Tea">
+        <h3>Masala Tea</h3>
+        <p>Aromatic and spicy tea brewed with Indian spices.</p>
+        <p class="price">Rs.10/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious Cappuccino.png" alt="Coffee">
+        <h3>Cappuccino</h3>
+        <p>Rich espresso with a creamy frothy layer.</p>
+        <p class="price">Rs.40/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious Chocolate Milkshake.png" alt="Milkshake">
+        <h3>Chocolate Milkshake</h3>
+        <p>Thick and creamy with real chocolate.</p>
+        <p class="price">Rs.60/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious lemonade.png" alt="Lemonade">
+        <h3>Lemonade</h3>
+        <p>Refreshing and tangy lemon drink.</p>
+        <p class="price">Rs.20/-</p>
+      </div>
+    </div>
+  
+    <!-- Combos -->
+    <h3>Combos</h3>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="attractive and delicious Burger & Fries Combo.png" alt="Burger and Fries">
+        <h3>Burger & Fries Combo</h3>
+        <p>Juicy burger served with crispy fries.</p>
+        <p class="price">Rs.140/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious Pizza & Cold Drink Combo.png" alt="Pizza and Drink">
+        <h3>Pizza & Drink Combo</h3>
+        <p>Cheesy pizza with a refreshing drink.</p>
+        <p class="price">Rs.140/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious Sandwich & Coffee Combo.png" alt="Sandwich and Coffee">
+        <h3>Sandwich & Coffee Combo</h3>
+        <p>Fresh sandwich paired with a cup of coffee.</p>
+        <p class="price">Rs.150/-</p>
+      </div>
+      <div class="card">
+        <img src="attractive and delicious Snack Box.png" alt="Snack Box">
+        <h3>Snack Box</h3>
+        <p>Assorted snacks for a quick bite.</p>
+        <p class="price">Rs.150/-</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="gallery" id="Gallery">
+    <h2>Gallery</h2>
+    <p>Take a glimpse of our cafe’s vibrant ambiance, candid moments, and beautiful settings.</p>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="WhatsApp Image 2024-11-25 at 9.24.32 PM.jpeg" alt="Ambience">
+      </div>
+      <div class="gallery-item">
+        <img src="cafeview.jpeg" alt="Cafe View">
+      </div>
+      <div class="gallery-item">
+        <img src="candidmom.jpeg" alt="Candid Moment">
+      </div>
+      <div class="gallery-item large">
+        <img src="cafeinter.jpeg" alt="Cafe Interior">
+      </div>
+      <div class="gallery-item">
+        <img src="friendsenjoy.jpeg" alt="Outdoor Seating">
+      </div>
+      <div class="gallery-item">
+        <img src="outdoorsitting.jpeg" alt="Friends Enjoying">
+      </div>
+      <div class="gallery-item">
+        <img src="WhatsApp Image 2024-11-25 at 8.12.41 PM.jpeg" alt="Cozy Corner">
+      </div>
+      <!-- <div class="gallery-item large">
+        <img src="images/event.jpg" alt="Event at Cafe">
+      </div> -->
+    </div>
+  </section>
+
+  
+  <!-- <section class="blog" id="Blog">
+    <h2>Cook's Recipes</h2>
+    <p>Discover some delicious recipes from our talented cook. These are just a few highlights; explore more on the blog page!</p>
+    
+    <div class="blog-cards">
+      <div class="blog-card">
+        <img src="Classic Margherita Pizza.png" alt="Recipe 1">
+        <h3>Classic Margherita Pizza</h3>
+        <p>A simple and delicious recipe for a classic Italian favorite with a homemade touch.</p>
+        <a href="recipe1.html" class="btn">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="Spicy Indian Chaat.png" alt="Recipe 2">
+        <h3>Spicy Indian Chaat</h3>
+        <p>Learn how to make the perfect street-style chaat with bold flavors and fresh ingredients.</p>
+        <a href="recipe2.html" class="btn">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="Refreshing Lemonade.png" alt="Recipe 3">
+        <h3>Refreshing Lemonade</h3>
+        <p>Beat the heat with this quick and easy lemonade recipe that everyone will love.</p>
+        <a href="recipe3.html" class="btn">Read More</a>
+      </div>
+    </div>
+  
+    <a href="blog.html" class="btn-main">View All Recipes</a>
+  </section> -->
+
+  
+  <section class="contact" id="Contact">
+
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Feel free to reach out to us!</p>
+  
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Address</h3>
+        <p>DY Patil Agriculture and Technical University, Talsande, Kolhapur, Maharashtra</p>
+      </div>
+      <div class="contact-item">
+        <h3>Phone</h3>
+        <p>+91 123 456 7890</p>
+      </div>
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p>contact@hungrybear.com</p>
+      </div>
+    </div>
+  
+    <div class="social-links" id="Social">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/sunday_chronicles_by_mann/profilecard/?igsh=bXZha2FsamY5ZmJx" target="_blank" class="social-btn instagram">Instagram</a>
+      <a href="https://www.facebook.com/share/13qJ1nZooT/" target="_blank" class="social-btn facebook">Facebook</a>
+    </div>
+
+
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Us Message</button>
+  </form>
+
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2024 Hungry Bear Cafe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <a href="index7.html" class="back-to-top" title="Back to Top">↑</a>
+
+</body>
+</html>
