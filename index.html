@@ -54,9 +54,9 @@
 </script>
 
 <style>
-    /* html {
+    html {
       scroll-behavior: smooth;
-    } */
+    }
 </style>
 
 
@@ -67,12 +67,12 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="logo.png" alt="Hungrey Bear Logo" class="logo-img" style="color: black;">
+        <a href="index.html"> <img src="IMG-20230817-WA0001.jpg" alt="Hungrey Bear Logo" class="logo-img" style="color: black;"></a>
       </div>
      
       <!-- <div class="logo">Hungrey Bear</div> -->
       <ul class="nav-links">
-        <li><a href="index7.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <!-- <li><a href="about.html">About Us</a></li> -->
         <li><a href="#Menu">Menu</a></li>
         <li><a href="#Gallery">Gallery</a></li>
@@ -87,7 +87,7 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1 class="fade-in" style="color: aliceblue;">Welcome to <i>Hungry Bear</i></h1>
+      <h1 class="fade-in" style="color: aliceblue; font-size: 3em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); transition: transform 1s ease-in-out, opacity 1s ease-in-out, color 1s ease-in-out;">Welcome to <i>Hungry Bear</i></h1>
       <p id="para1">Your favorite hangout spot on campus!</p>
       <a href="#Menu" class="btn" >View Menu</a>
     </div>
@@ -111,125 +111,47 @@
     </div>
   </section>
 
-  <section class="menu" id="Menu">
-    <h2 class="slide-in">Our Menu</h2>
-  
-    <!-- Indian Snacks -->
-    <h3>Indian Snacks</h3>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="attractive and delicious samosas.png" alt="Samosa">
-        <h3>Samosa</h3>
-        <p>Golden fried, stuffed with spicy potato filling.</p>
-        <p class="price">Rs.20/-</p>
+
+ 
+  <div class="menu-container" id="Menu">
+    <h1>Explore Our Menu</h1>
+    <div class="categories">
+      <!-- Category Item -->
+      <div class="category" data-category="chinese">
+        <img src="attractive and delicious Burger & Fries Combo.png" alt="Chinese Food">
+        <h2>Chinese</h2>
       </div>
-      <div class="card">
-        <img src="attractive and delicious pakoras.png" alt="Pakora">
-        <h3>Pakora</h3>
-        <p>Deep-fried fritters with a variety of fillings.</p>
-        <p class="price">Rs.40/-</p>
+      <div class="category" data-category="indian">
+        <img src="attractive and delicious vada pav.png" alt="Indian Food">
+        <h2>Indian</h2>
       </div>
-      <div class="card">
-        <img src="attractive and delicious idli and dosas.png" alt="Idli">
-        <h3>Idli</h3>
-        <p>Soft and fluffy steamed rice cakes.</p>
-        <p class="price">Rs.40/-</p>
+      <div class="category" data-category="fast-food">
+        <img src="attractive and delicious Sandwich & Coffee Combo.png" alt="Fast Food">
+        <h2>Fast Food</h2>
       </div>
-      <div class="card">
-        <img src="attractive and delicious vada pav.png" alt="Vada Pav">
-        <h3>Vada Pav</h3>
-        <p>The classic Indian burger with a spicy potato patty.</p>
-        <p class="price">Rs.20/-</p>
+      <div class="category" data-category="italian">
+        <img src="attractive and delicious Pizza & Cold Drink Combo.png" alt="Italian Food">
+        <h2>Italian</h2>
       </div>
-    </div>
-  
-    <!-- International Snacks -->
-    <h3>International Snacks</h3>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="attractive and delicious french fries.png" alt="French Fries">
-        <h3>French Fries</h3>
-        <p>Crispy and golden fries with a pinch of salt.</p>
-        <p class="price">Rs.30/-</p>
+      <div class="category" data-category="desserts">
+        <img src="attractive and delicious Chocolate Milkshake.png" alt="Desserts">
+        <h2>Desserts</h2>
       </div>
-      <div class="card">
-        <img src="an attractive and delicious picture of the Maharaja sandwich.png" alt="Cheese Balls">
-        <h3>Cheese Balls</h3>
-        <p>Cheesy and crunchy snacks perfect for any time.</p>
-        <p class="price">Rs.120/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious hot spring rolls.png" alt="Spring Rolls">
-        <h3>Spring Rolls</h3>
-        <p>Delicious rolls stuffed with veggies or chicken.</p>
-        <p class="price">Rs.80/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious nachos.png" alt="Nachos">
-        <h3>Nachos</h3>
-        <p>Crispy tortilla chips served with salsa and cheese.</p>
-        <p class="price">Rs.50/-</p>
+      <div class="category" data-category="beverages">
+        <img src="attractive and delicious lemonade.png" alt="Beverages">
+        <h2>Beverages</h2>
       </div>
     </div>
-  
-    <!-- Beverages -->
-    <h3>Beverages</h3>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="attractive and delicious masala tea.png" alt="Tea">
-        <h3>Masala Tea</h3>
-        <p>Aromatic and spicy tea brewed with Indian spices.</p>
-        <p class="price">Rs.10/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious Cappuccino.png" alt="Coffee">
-        <h3>Cappuccino</h3>
-        <p>Rich espresso with a creamy frothy layer.</p>
-        <p class="price">Rs.40/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious Chocolate Milkshake.png" alt="Milkshake">
-        <h3>Chocolate Milkshake</h3>
-        <p>Thick and creamy with real chocolate.</p>
-        <p class="price">Rs.60/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious lemonade.png" alt="Lemonade">
-        <h3>Lemonade</h3>
-        <p>Refreshing and tangy lemon drink.</p>
-        <p class="price">Rs.20/-</p>
-      </div>
+  </div>
+
+  <!-- Modal to show items -->
+  <div class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal">Close</button>
+      <h2 id="category-title"></h2>
+      <ul id="food-items-list"></ul>
     </div>
-  
-    <!-- Combos -->
-    <h3>Combos</h3>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="attractive and delicious Burger & Fries Combo.png" alt="Burger and Fries">
-        <h3>Burger & Fries Combo</h3>
-        <p>Juicy burger served with crispy fries.</p>
-        <p class="price">Rs.140/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious Pizza & Cold Drink Combo.png" alt="Pizza and Drink">
-        <h3>Pizza & Drink Combo</h3>
-        <p>Cheesy pizza with a refreshing drink.</p>
-        <p class="price">Rs.140/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious Sandwich & Coffee Combo.png" alt="Sandwich and Coffee">
-        <h3>Sandwich & Coffee Combo</h3>
-        <p>Fresh sandwich paired with a cup of coffee.</p>
-        <p class="price">Rs.150/-</p>
-      </div>
-      <div class="card">
-        <img src="attractive and delicious Snack Box.png" alt="Snack Box">
-        <h3>Snack Box</h3>
-        <p>Assorted snacks for a quick bite.</p>
-        <p class="price">Rs.150/-</p>
-      </div>
-    </div>
-  </section>
+  </div>
 
   
   <section class="gallery" id="Gallery">
@@ -265,7 +187,7 @@
   </section>
 
   
-  <!-- <section class="blog" id="Blog">
+  <section class="blog" id="Blog">
     <h2>Cook's Recipes</h2>
     <p>Discover some delicious recipes from our talented cook. These are just a few highlights; explore more on the blog page!</p>
     
@@ -291,7 +213,7 @@
     </div>
   
     <a href="blog.html" class="btn-main">View All Recipes</a>
-  </section> -->
+  </section>
 
   
   <section class="contact" id="Contact">
@@ -342,7 +264,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <a href="index7.html" class="back-to-top" title="Back to Top">↑</a>
+  <a href="index.html" class="back-to-top" title="Back to Top">↑</a>
 
 </body>
 </html>
