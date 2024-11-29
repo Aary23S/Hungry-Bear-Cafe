@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const foodItemsList = document.getElementById("food-items-list");
 
   const foodItems = {
-    chinese: ["Noodles", "Fried Rice", "Spring Rolls"],
+    chinese: ["Noodles", "Fried Rice", "Spring Rolls","Fried Rice","Manchurian"],
     indian: ["Butter Chicken", "Paneer Tikka", "Biryani"],
     "fast-food": ["Burger", "Fries", "Pizza"],
     italian: ["Margherita Pizza", "Spaghetti Carbonara", "Lasagna"],
