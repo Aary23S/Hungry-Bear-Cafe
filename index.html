@@ -65,11 +65,15 @@
 <!-- Main Body Code -->
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="logo">
         <a href="index.html"> <img src="IMG-20230817-WA0001.jpg" alt="Hungrey Bear Logo" class="logo-img" style="color: black;"></a>
       </div>
-     
+      <!-- Add this code above your menu or header section -->
+<div class="search-container">
+  <input type="text" id="search-bar" placeholder="Search for a category or item..." />
+</div>
+
       <!-- <div class="logo">Hungrey Bear</div> -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -78,8 +82,10 @@
         <li><a href="#Gallery">Gallery</a></li>
         <!-- <li><a href="Events">Events</a></li> -->
         <li><a href="#Contact">Contact</a></li>
-        <!-- <li><a href="#Blog">Blog</a></li> -->
+        <li><a href="#Blog">Blog</a></li>
+      
       </ul>
+      <button id="theme-toggle">🌙</button>
     </nav>
   
   
@@ -118,17 +124,17 @@
     <div class="categories">
       <!-- Category Item -->
       <div class="category" data-category="chinese">
-        <img src="attractive and delicious Burger & Fries Combo.png" alt="Chinese Food">
+        <img src="Chinese food like soup, Manchurian, noodles.png" alt="Chinese Food">
         <h2>Chinese</h2>
       </div>
       <div class="category" data-category="indian">
         <img src="attractive and delicious vada pav.png" alt="Indian Food">
         <h2>Indian</h2>
       </div>
-      <div class="category" data-category="fast-food">
+      <!-- <div class="category" data-category="fast-food">
         <img src="attractive and delicious Sandwich & Coffee Combo.png" alt="Fast Food">
         <h2>Fast Food</h2>
-      </div>
+      </div> -->
       <div class="category" data-category="italian">
         <img src="attractive and delicious Pizza & Cold Drink Combo.png" alt="Italian Food">
         <h2>Italian</h2>
@@ -140,6 +146,10 @@
       <div class="category" data-category="beverages">
         <img src="attractive and delicious lemonade.png" alt="Beverages">
         <h2>Beverages</h2>
+      </div>
+      <div class="category" data-category="dinner">
+        <img src="beautiful appealing and tasty image of pure veg Indian dinner food items like roti, rice, paneer tikka.png" alt="Dinner">
+        <h2>Dinner</h2>
       </div>
     </div>
   </div>
@@ -216,6 +226,30 @@
   </section>
 
   
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <p>""The University Cafe is my go-to spot for a quick, delicious meal between classes. The staff is always friendly, and the food is consistently amazing." - Adissri Mithari</p>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent service and user-friendly experience. Highly recommended!" - Aarya Dalal</p>
+      </div>
+      <div class="testimonial">
+        <p>"I celebrated my birthday at the University Cafe, and it was a fantastic experience. The decor is charming, and the staff went out of their way to make my day special. The deep-fried haggis, although not on the menu, was a delightful surprise!" - Abhyang Yadav</p>
+      </div>
+      <div class="testimonial">
+        <p>"I love the University Cafe's selection of desserts. The vanilla ice cream and chocolate frappe are to die for. It's a great place to catch up with friends over a cup of tea or coffee" - Aditi Khot</p>
+      </div>
+     
+    </div>
+    <button class="prev-btn">Prev</button>
+    <button class="next-btn">Next</button>
+  </section>
+
+
+
+  
   <section class="contact" id="Contact">
 
     <h2>Contact Us</h2>
@@ -228,11 +262,11 @@
       </div>
       <div class="contact-item">
         <h3>Phone</h3>
-        <p>+91 123 456 7890</p>
+        <p>+91 98223 00870</p>
       </div>
       <div class="contact-item">
         <h3>Email</h3>
-        <p>contact@hungrybear.com</p>
+        <p>manshelke97@gmail.com</p>
       </div>
     </div>
   

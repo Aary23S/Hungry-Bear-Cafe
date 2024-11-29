@@ -10,6 +10,59 @@
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
+/* Light Mode Styles (Default) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 1px solid #ccc;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: rgb(20, 20, 20); /* Ensures text color is white in dark mode */
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: white;
+  border: 1px solid #888;
+}
+
+/* Optionally, if you have other elements like links, ensure they are also visible */
+a {
+  color: #007bff;
+}
+
+body.dark-mode a {
+  color: #80d4ff; /* Lighter link color for better visibility in dark mode */
+}
+
+/* Ensure text within specific elements is visible in both themes */
+.hero, .contact, .highlights, .menu-container, .gallery, .blog {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .hero, body.dark-mode .contact, body.dark-mode .highlights, body.dark-mode .menu-container, body.dark-mode .gallery, body.dark-mode .blog {
+  background-color: #444;
+  color: rgb(23, 23, 23);
+}
+/* Default Light Mode Styles */
+#food-items-list li {
+  color: black; /* Default text color for food items in light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode #food-items-list li #category-title{
+  color: rgb(11, 11, 11); /* Text color for food items in dark mode */
+}
+
       @media (max-width: 768px) {
         .container {
             padding: 5%;
@@ -145,6 +198,39 @@ nav {
   top: 0;
   z-index: 1000;
 }
+.navbar {
+  position: fixed; /* Makes the navigation bar fixed */
+  top: 0; /* Aligns it to the top */
+  left: 0; /* Ensures it spans the full width */
+  width: 100%; /* Makes it responsive across screen sizes */
+  height: 60px; /* Adjust height as needed */
+  background-color: #2c3e50; /* Background color of the navigation bar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  z-index: 1000; /* Ensures it stays above other elements */
+  display: flex; /* Aligns the content horizontally */
+  align-items: center; /* Centers the items vertically */
+  justify-content: space-between; /* Positions logo and menu on opposite sides */
+  padding: 0 20px; /* Adds spacing inside the bar */
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#search-bar {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#search-bar:focus {
+  border-color: #007bff;
+}
+
 
   .logo {
     flex: 1;  /* Ensures logo is aligned to the left */
@@ -497,7 +583,70 @@ nav {
   }
   
   /* ------------------------------------------------------------ */
+  
 
+.testimonials {
+  text-align: center;
+  margin: 50px 0;
+  position: relative; /* Add relative positioning to the testimonials section */
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  display: none;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #000000;
+  font-style: italic;
+  background: #ffffff;
+}
+
+.testimonial-slider .testimonial:first-child {
+  display: block; /* Initially show the first testimonial */
+}
+
+/* Button Styles */
+.prev-btn, .next-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute; /* Position buttons within the testimonial section */
+  top: 50%;
+  transform: translateY(50%);
+  z-index: 10;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.prev-btn {
+  left: 10px; /* Move the 'Prev' button to the left */
+}
+
+.next-btn {
+  right: 10px; /* Move the 'Next' button to the right */
+}
+
+/* Light/Dark mode */
+body.dark-mode .testimonial {
+  background: #333;
+  color: #000000;
+}
+
+/* ------------------------------------------------------------------- */
   /* contact info */
   .contact h2 {
     font-size: 2rem;
