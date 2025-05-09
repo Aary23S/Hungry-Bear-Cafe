@@ -227,3 +227,15 @@ document.addEventListener('DOMContentLoaded', function() {
       this.reset();
     });
   });
+
+ // Add to your script.js
+document.querySelectorAll('.read-more').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    // You can add functionality to:
+    // 1. Open a modal with full blog content
+    // 2. Navigate to individual blog pages
+    // 3. Load content dynamically
+    alert('Blog post will open here!');
+  });
+});
