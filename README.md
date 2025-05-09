@@ -132,6 +132,19 @@ This project is protected under the terms of a **Memorandum of Understanding (Mo
 
 - Do not copy, replicate, or distribute this software or its design without written permission.
 - All branding, visual assets, and data belong to the respective owner of Hungry Bear Cafe.
+
+## 🔒 LEGAL NOTICE
+
+This repository contains proprietary assets of HungryBear Cafe (Copyright ©2025).  
+**Unauthorized access, cloning, or distribution violates:**  
+- Signed MOU (20/September/2024)  
+- Digital Millennium Copyright Act (DMCA)  
+- Trade secret protections  
+
+Violations will result in:  
+✖ Legal action  
+✖ GitHub DMCA takedown  
+✖ Termination of all access privileges  
 - Violations may lead to legal action as outlined in the MoU.
 
 ---
